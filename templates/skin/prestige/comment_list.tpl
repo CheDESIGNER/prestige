@@ -1,4 +1,4 @@
-1<div class="comments comment-list">
+<div class="comments comment-list">
 	{foreach from=$aComments item=oComment}
 		{assign var="oUser" value=$oComment->getUser()}
 		{assign var="oTopic" value=$oComment->getTarget()}
