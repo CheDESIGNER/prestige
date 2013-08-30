@@ -9,4 +9,4 @@
 			{include file=$aBlock.name params=$aBlock.params}
 		{/if}
 	{/foreach}
-{/if}
+{/if}123
