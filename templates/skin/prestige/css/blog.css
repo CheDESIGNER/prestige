@@ -1,0 +1,345 @@
+/* --------------------------------------------
+	БЛОГ
+-------------------------------------------- */
+
+.blog {
+    background: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+/* Header */
+.blog .blog-header {
+    position: relative;
+    padding: 15px 130px 15px 78px;
+    border-bottom: 1px solid #eee;
+}
+
+.blog .blog-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+.blog .blog-header h2 i {
+    position: relative;
+    top: 5px;
+}
+
+.blog .blog-header .avatar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.blog .blog-header .vote-label {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 11px;
+    color: #aaa;
+}
+
+.blog .blog-header .count {
+    font-size: 34px;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.blog .blog-header .vote {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.blog .blog-header .vote .vote-count {
+    padding-left: 25px;
+    display: block;
+    color: #333;
+}
+
+.blog .blog-header .vote .vote-up {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    display: none;
+}
+
+.blog .blog-header .vote .vote-down {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: none;
+}
+
+.blog .blog-header .vote:hover .vote-up,
+.blog .blog-header .vote:hover .vote-down,
+.blog .blog-header .vote.voted .vote-up,
+.blog .blog-header .vote.voted .vote-down {
+    display: inline-block;
+}
+
+.blog .blog-header .vote.vote-count-positive .vote-count {
+    color: #5055B2;
+}
+
+.blog .blog-header .actions {
+    margin-bottom: 0;
+}
+
+/* Content */
+.blog .blog-content {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Footer */
+.blog .blog-footer {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* More Button */
+.blog-more {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    background: #fafafa;
+}
+
+.blog-more:hover {
+    background: #eee;
+}
+
+
+/* List Blogs */
+.blogs-lists {}
+.blogs-lists ul.lists {}
+.blogs-lists ul.lists .one-blog {
+    position: relative;
+    padding-left: 170px;
+    background: url("../images/line-6.png") repeat-x bottom center;
+    height: 152px;
+    padding-bottom: 25px;
+    margin-bottom: 22px;
+}
+.blogs-lists ul.lists .one-blog:last-child {
+    background: none;
+    padding-bottom: 0;
+}
+.blogs-lists ul.lists .one-blog.blog-open {
+    height: auto;
+    background: none;
+    padding-bottom: 0;
+    min-height: 170px;
+}
+
+.blogs-lists ul.lists .one-blog .vote {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.blogs-lists ul.lists .one-blog .name-blog {
+    margin-bottom: 3px;
+}
+.blogs-lists ul.lists .one-blog .name-blog .avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.blogs-lists ul.lists .one-blog .name-blog .avatar img {
+    vertical-align: top;
+    border: 1px solid #FFF;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.blogs-lists ul.lists .one-blog .name-blog .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444444;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+    margin-right: 20px;
+    padding-top: 8px;
+    display: inline-block;
+}
+.blogs-lists ul.lists .one-blog .name-blog .join-link {
+    position: relative;
+    padding: 3px 7px;
+    font-size: 10px;
+    top: -3px;
+    border-radius: 2px;
+}
+
+.blogs-lists ul.lists .one-blog .nav {
+    height: 35px;
+    margin-bottom: 13px;
+}
+.blogs-lists ul.lists .one-blog .nav a {
+    cursor: pointer;
+    line-height: 21px;
+}
+.blogs-lists ul.lists .one-blog .nav .active a {
+    line-height: 21px;
+}
+.blogs-lists ul.lists .one-blog .nav a span {
+    font-weight: normal;
+    color: #c4c4c4;
+}
+
+.blogs-lists ul.lists .one-blog .txt-info {
+    background: #FFF;
+    position: relative;
+    padding: 7px 15px;
+    box-shadow: 0 0 20px -10px #000;
+    box-sizing: border-box;
+    color: #717171;
+    font-size: 14px;
+    /*height: 70px;*/
+}
+
+.blogs-lists ul.lists .one-blog .avatar-info {
+    display: none;
+}
+
+.blogs-lists ul.lists .one-blog .user-list-avatar {
+    padding: 0 3px;
+}
+.blogs-lists ul.lists .one-blog .user-list-avatar li {}
+.blogs-lists ul.lists .one-blog .user-list-avatar li .avatar {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #FFF;
+    border-radius: 1px;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+}
+
+.blogs-lists ul.lists .one-blog .actions {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    line-height: 12px;
+}
+.blogs-lists ul.lists .one-blog .actions li {
+    float: none;
+    font-size: 10px;
+}
+
+
+.blogs-lists-style-2 {}
+.blogs-lists-style-2 ul.lists {
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    padding: 1px 0 0 0;
+}
+.blogs-lists-style-2 ul.lists .one-blog {
+    float: left;
+    position: relative;
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    padding: 0 1%;
+    box-sizing: border-box;;
+    -moz-box-sizing: border-box;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .avatar {
+    outline: 1px solid #FFF;
+    border-radius: 1px;
+    box-shadow: 0 3px 7px -5px #000;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .blog-info-list {
+    display: inline-block;
+    position: relative;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .shadow {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+    width: 100%;
+    display: block;
+    opacity: 0.5;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .shadow:hover {
+    opacity: 0;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .blog-join {
+    position: absolute;
+    bottom: 90px;
+    left: 30px;
+    padding: 3px 7px;
+    font-size: 10px;
+    border-radius: 2px;
+    display: none;
+}
+.blogs-lists-style-2 ul.lists .one-blog:hover .blog-join {
+    display: block;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .title:hover {
+    color: #DA7133;
+}
+
+.blogs-lists-style-2 ul.lists .one-blog .title {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    text-shadow: 1px 2px 6px #5E5E5E;
+    line-height: 32px;
+}
+.blogs-lists-style-2 ul.lists .one-blog .title i {
+    background: url("../images/ico-39.png") no-repeat;
+    width: 8px;
+    height: 10px;
+    position: absolute;
+    left: -18px;
+    top: 11px;
+}
+.blogs-lists-style-2 ul.lists .one-blog .topics {
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    text-shadow: 1px 2px 2px #555;
+}
+
+
+/*хаки для FF*/
+@-moz-document url-prefix() {
+    .blogs-lists ul.lists .one-blog .txt-info {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .blogs-lists-style-2 ul.lists .one-blog .avatar {
+        outline:none;
+    }
+    .blogs-lists-style-2 ul.lists .one-blog .shadow {
+        display: inline-block;
+        position: relative;
+        /*top: -14px;*/
+    }
+}

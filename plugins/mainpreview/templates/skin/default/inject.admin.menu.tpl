@@ -1,0 +1,2 @@
+<li><br/><a href="{router page="mainpreview"}convert">{$aLang.plugin.mainpreview.admin_list_convert}</a></li>
+<li><a href="{router page="mainpreview"}reconvert">{$aLang.plugin.mainpreview.admin_list_reconvert}</a></li>

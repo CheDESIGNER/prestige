@@ -1,0 +1,345 @@
+/* --------------------------------------------
+	КОММЕНТАРИИ
+-------------------------------------------- */
+
+/* Блок с комментариями */
+.comments-header {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 0 #FFF;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.comments-header h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+    float: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.comments-header input.input-checkbox {
+    display: none;
+}
+.comments-header label {
+    font-size: 12px;
+    color: #c4c4c4;
+    border-bottom: 1px dashed #b2b2b2;
+    position: relative;
+    top: 13px;
+    left: 20px;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.comments {
+    margin-bottom: 15px;
+}
+
+.comments .comment-wrapper:last-child {
+   /* box-shadow: 0 1px 0 0 #FFF;
+    border-bottom: 1px solid #C8C8C8;*/
+}   
+
+.comment-wrapper {
+    position: relative;
+}
+
+.comment-wrapper .comment-wrapper {
+    padding-left: 55px;
+    box-shadow: none!important;
+    border-bottom: 0!important;
+}
+
+.comment-preview {
+    background: none repeat scroll 0 0 #F4FFF4;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.15);
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+    color: #333333;
+    margin: 10px 0 10px 0;
+    padding: 10px 20px;
+}
+
+.comment-preview {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* Стили для списка комментариев на странице http://ваш_сайт/comments/ */
+.comments.comment-list .comment {
+    margin-bottom: 15px;
+}
+
+.comments.comment-list .comment-path {
+    padding: 0 0 10px;
+}
+
+.comments.comment-list .comment-path .blog-name {
+    color: #777;
+}
+
+/* Комментарий */
+.comment {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    min-height: 40px;
+    padding: 15px 20px 40px;
+    position: relative;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.comment:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -28px;
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-color: #fff #fff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+}
+.comment:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-color: #e8e8e8 #e8e8e8 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+}
+
+.comment .deleted {
+    padding: 5px 10px;
+    color: #777;
+    background: #f4f4f4;
+}
+
+.comment .comment-avatar {
+    background: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    padding: 1px;
+    border: 3px solid #FFF;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.comment .comment-avatar:hover {
+    border-radius: 0 0 0 0;
+}
+
+/* Типы комментариев
+*
+* deleted 	- 	удаленный комментарий
+* self 	- 	ваш комментарий
+* new 		- 	новый, непрочитанный комментарий
+* current 	- 	активный комментарий, который выделяется при исползование кнопки обновления в тулбаре
+*
+*/
+.comment.comment-author {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #F2B185;
+}
+.comment.comment-author:before {
+    border-color: #F2B185 #F2B185 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.comment {
+   -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.15);
+    border-image: none;
+    border-radius: 1px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.comment.comment-deleted {
+    background: #FFF2F2;
+}
+.comment.comment-deleted:after {
+    border-color: #FFF2F2 #FFF2F2 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.comment.comment-self {
+    background: #F4FFF4;
+}
+.comment.comment-self:after {
+    border-color: #F4FFF4 #F4FFF4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.comment.comment-new {
+    background: #ffffe3;
+}
+.comment.comment-new:after {
+    border-color: #ffffe3 #ffffe3 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.comment.comment-current {
+    background: #edfdff;
+}
+.comment.comment-current:after {
+    border-color: #edfdff #edfdff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.comment.comment-bad {
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+}
+
+.comment.comment-bad:hover {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+.ls-user-role-not-admin .comment.comment-deleted {
+    padding: 10px 15px;
+    color: #888;
+    min-height: 43px;
+}
+.ls-user-role-not-admin .comment.comment-deleted .text {
+    line-height: 40px;
+    text-align: center;
+}
+
+/* Info Block */
+.comment .comment-info {
+    padding: 0 0 3px 0;
+    line-height: 12px;
+    position: relative;
+    top: -2px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.comment .comment-info li {
+    float: left;
+    height: 18px;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.comment .comment-info li a {
+    text-decoration: none;
+}
+
+.comment .comment-info li.comment-author a {
+    color: #424242;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.comment .comment-info li.comment-author {
+    padding-top: 5px;
+}
+
+.comment .comment-info li.comment-author a:hover {
+    color: #DA7133;
+}
+
+.comment .comment-info li.comment-author .comment-topic-author {
+    color: #DA7133;
+    font-size: 14px;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+.comment .comment-info li.comment-date {
+    color: #adacac;
+    margin-right: 6px;
+    padding-top: 3px;
+    clear: both;
+}
+.comment .comment-info li.comment-date a {
+    color: #adacac;
+    font-size: 12px;
+}
+
+.comment .comment-info li.comment-favourite {
+    padding: 4px 0 0 0;
+}
+.comment .comment-info li.comment-favourite .icox {
+    position: relative;
+    left: -1px;
+    top: 2px;
+}
+
+.comment .comment-info li.goto-comment-child {
+    display: none;
+}
+
+.comment div.vote {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    margin: 0;
+}
+
+.comment .comment-actions {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Content */
+.comment .comment-content {}
+
+.comment .comment-content.text {
+    font-size: 15px;
+    color: #333333;
+    line-height: 22px;
+
+}
+
+.comment .comment-content.text blockquote {
+    background: #F8F8F8;
+    border-color: #ccc;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+/* Actions */
+.comment .comment-actions li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.comment .comment-actions li a {
+    font-size: 11px;
+}
+
+/* Форма комментирования */
+.reply-header {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.reply {
+    padding-bottom: 10px;
+}
+
+.reply textarea {
+    height: 100px;
+}
+
+.reply textarea.loader {
+    background: #f7f7f7 url(../images/loader.gif) no-repeat center;
+}
+
+.reply .mceEditor {
+    display: block;
+    margin-bottom: 10px;
+}

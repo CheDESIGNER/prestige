@@ -1,0 +1,242 @@
+/* --------------------------------------------
+	СЕТКА
+-------------------------------------------- */
+
+#container {
+    margin: 0 auto 20px;
+    width: 1195px;
+}
+
+#header-dubl {
+    position: relative;
+    padding: 15px 30px 8px;
+    height: 27px;
+    margin-bottom: 60px;
+}
+
+#header {
+    background: rgba(0,0,0,0.7);
+    position: relative;
+    padding: 15px 30px 8px;
+    border-radius: 0 0 4px 4px;
+    margin: 0 auto 60px;
+    box-shadow: 0 6px 20px -7px #000;
+    z-index: 2;
+    width: 1135px;
+}
+#header.fixed {
+    position: fixed;
+    top: 0;
+    height: 27px;
+    left: 50%;
+    margin-left: -598px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    padding: 30px;
+    background: url("../images/noise.png") repeat scroll center center #F0F0F0;
+    box-shadow: 0 0 7px -3px #000, 0 1px 0 0 #fff inset;
+    border-radius: 4px 4px 0 0;
+}
+
+#content {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    width: 76%;
+    margin-left: 2%;
+    background: #fff;
+    position: relative;
+    padding: 25px;
+    box-shadow: 0 0 20px -10px #000;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+}
+#content.masonry-on {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+}
+#content.bigpreview-on {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+}
+#content.profile-page {
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0;
+    background: none;
+    width: 75%;
+    margin-left: 3%;
+}
+#content.profile-page .content-profile {
+    background: #fff;
+    position: relative;
+    padding: 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#content.people-page,
+#content.blog-page {
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0;
+    background: none;
+}
+
+#content.blog-page .blog-topics,
+#content.blog-page .blog-topic .topic {
+    background: #fff;
+    position: relative;
+    padding: 25px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 55px;
+}
+#content.blog-page .blog-topics.masonry-on {
+    background: none repeat scroll 0 0 transparent;
+    box-shadow: none;
+    color: #666666;
+    font-size: 14px;
+    padding: 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+
+
+#sidebar {
+    float: right;
+    width: 22%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#footer {
+    background: rgba(0,0,0,0.9);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 45px;
+    padding: 30px 30px 20px;
+    color: #989898;
+    border-radius: 0 0 4px 4px;
+    font-family: "PT Sans";
+    font-size: 12px;
+    box-shadow: 0 6px 20px -7px #000;
+}
+#footer a {
+}
+#footer h6 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+#footer div {
+    display: inline-block;
+    vertical-align: top;
+}
+#footer .copy {
+    width: 210px;
+    margin-right: 50px;
+    line-height: 22px;
+}
+#footer .colum {
+    width: 125px;
+    margin-right: 70px;
+}
+#footer .colum li {
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+#footer .colum:last-child {
+    margin-right: 0;
+    width: 180px;
+}
+
+#footer .chelogo {
+    background: url("http://prestige.lstemplates.com/templates/skin/prestige/images/chelogo.png") no-repeat scroll 0 0 transparent;
+    height: 134px;
+    width: 104px;
+    display: block;
+}
+
+#footer .chelogo:hover {
+    background: url("http://prestige.lstemplates.com/templates/skin/prestige/images/chelogo-hover.png") no-repeat scroll 0 0 transparent;
+    display: block;
+}
+
+#footer .soc li {
+    margin-right: 10px;
+    float: right;
+}
+
+#footer .fb a {
+    background: url("http://prestige.lstemplates.com/templates/skin/prestige/images/fb.png") no-repeat scroll left center transparent;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+#footer .tw a {
+    background: url("http://prestige.lstemplates.com/templates/skin/prestige/images/tw.png") no-repeat scroll left center transparent;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+#footer .gp a {
+    background: url("http://prestige.lstemplates.com/templates/skin/prestige/images/gp.png") no-repeat scroll left center transparent;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+#footer .soc a:hover {
+    opacity: 0.7;
+}
+
+#content.content-full-width {
+    width: 100%;
+    margin-right: 0;
+}
+
+#content.content-right {
+    margin-right: 0;
+    float: none;
+    margin-left: 311px;
+    width: auto;
+}
+
+#sidebar.sidebar-left {}
+
+
+/*хаки для FF*/
+@-moz-document url-prefix() {
+  #content {
+    box-shadow: 0 0 20px -17px #000;
+  }
+  #wrapper {
+    box-shadow: 0 0 7px -10px #000, 0 1px 0 0 #FFF inset;
+  }
+  #footer {
+    box-shadow: 0 6px 20px -14px #000;
+  }
+  #content.profile-page .content-profile {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  #content.blog-page .blog-topics,
+  #content.blog-page .blog-topic .topic {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+}

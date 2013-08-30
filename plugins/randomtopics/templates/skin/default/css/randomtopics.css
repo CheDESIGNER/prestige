@@ -1,0 +1,27 @@
+.block.randomtopics {}
+.block.randomtopics ul {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.block.randomtopics ul li {
+    float: left;
+}
+.block.randomtopics ul li .image {}
+.block.randomtopics ul li .image:hover {
+    opacity: 0.6;
+}
+.block.randomtopics ul li .image img {
+    width: 83px;
+    height: 83px;
+}
+
+.block.randomtopics ul li .noimage {
+    background: url("http://prestige.lstemplates.com/templates/skin/prestige/images/no-image.png") no-repeat;
+    color: #fff;
+    display: inline-block;
+    line-height: 83px;
+    width: 83px;
+    height: 83px;
+    text-shadow: none;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+﻿.viewcount {
+	float: left;
+	margin-right: 30px;}
+
+.viewcount-icon {
+	background: url(../img/icon-views.png) no-repeat center;
+	display: inline-block;
+	width: 12px; height: 12px;
+	cursor: pointer;}
+
+.viewcount-info {font-size: 11px; color:#7B848D; vertical-align: top;}

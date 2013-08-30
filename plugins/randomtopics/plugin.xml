@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <name>
+    <lang name="default">Random Topics</lang>
+  </name>
+  <author>
+    <lang name="default">s4people</lang>
+  </author>
+  <homepage>http://wstandart.ru</homepage>
+  <version>1.0</version>
+  <requires>
+    <livestreet>1.*</livestreet>
+    <plugins>
+
+    </plugins>
+  </requires>
+  <description>
+    <lang name="default">Block random topics.</lang>
+    <lang name="russian">Блок с рандом топиками.</lang>
+  </description>
+</plugin>

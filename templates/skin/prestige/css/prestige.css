@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'prestige';
+  src: url('../font/prestige.eot?11703574');
+  src: url('../font/prestige.eot?11703574#iefix') format('embedded-opentype'),
+       url('../font/prestige.woff?11703574') format('woff'),
+       url('../font/prestige.ttf?11703574') format('truetype'),
+       url('../font/prestige.svg?11703574#prestige') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'prestige';
+    src: url('../font/prestige.svg?11703574#prestige') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "prestige";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-plus:before { content: '\e80b'; } /* '?' */
+.icon-gplus:before { content: '\e81a'; } /* '?' */
+.icon-vk:before { content: '\e817'; } /* '?' */
+.icon-facebook:before { content: '\e818'; } /* '?' */
+.icon-star:before { content: '\e80c'; } /* '?' */
+.icon-edit:before { content: '\e815'; } /* '?' */
+.icon-heart:before { content: '\e806'; } /* '?' */
+.icon-trash:before { content: '\e809'; } /* '?' */
+.icon-user:before { content: '\e804'; } /* '?' */
+.icon-search:before { content: '\e808'; } /* '?' */
+.icon-camera:before { content: '\e803'; } /* '?' */
+.icon-tag:before { content: '\e801'; } /* '?' */
+.icon-pencil:before { content: '\e802'; } /* '?' */
+.icon-mail:before { content: '\e807'; } /* '?' */
+.icon-top:before { content: '\e800'; } /* '?' */
+.icon-clock:before { content: '\e82a'; } /* '?' */
+.icon-params:before { content: '\e80a'; } /* '?' */
+.icon-cancel-circled:before { content: '\e834'; } /* '?' */
+.icon-arrows-cw:before { content: '\e80f'; } /* '?' */
+.icon-flash-outline:before { content: '\e837'; } /* '?' */
+.icon-ok-circled:before { content: '\e833'; } /* '?' */
+.icon-comments:before { content: '\e828'; } /* '?' */
+.icon-asl:before { content: '\e829'; } /* '?' */
+.icon-doc-new:before { content: '\e81c'; } /* '?' */
+.icon-star-filled:before { content: '\e81e'; } /* '?' */
+.icon-menu:before { content: '\e810'; } /* '?' */
+.icon-user-add-outline:before { content: '\e81f'; } /* '?' */
+.icon-user-add:before { content: '\e816'; } /* '?' */
+.icon-lock:before { content: '\e826'; } /* '?' */
+.icon-eye:before { content: '\e80e'; } /* '?' */
+.icon-comment:before { content: '\e814'; } /* '?' */
+.icon-share:before { content: '\e823'; } /* '?' */
+.icon-logout:before { content: '\e831'; } /* '?' */
+.icon-refresh:before { content: '\e805'; } /* '?' */
+.icon-link:before { content: '\e835'; } /* '?' */
+.icon-bookmark-0:before { content: '\e83c'; } /* '?' */
+.icon-folder-empty:before { content: '\e813'; } /* '?' */
+.icon-twitter:before { content: '\e824'; } /* '?' */
+.icon-odnoklassniki:before { content: '\e81b'; } /* '?' */
+.icon-photoset:before { content: '\e82c'; } /* '?' */
+.icon-picture:before { content: '\e821'; } /* '?' */
+.icon-thumbs-up:before { content: '\e81d'; } /* '?' */
+.icon-thumbs-down:before { content: '\e822'; } /* '?' */
+.icon-chart:before { content: '\e82e'; } /* '?' */
+.icon-chart-bar:before { content: '\e811'; } /* '?' */
+.icon-bookmark:before { content: '\e80d'; } /* '' */

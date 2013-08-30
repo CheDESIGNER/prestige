@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>
+		<lang name="default">Main preview topic</lang>
+	</name>
+	<author>
+		<lang name="default">LiveStreet Developers Team</lang>
+	</author>
+	<homepage>http://livestreetcms.com</homepage>
+	<settings>{mainpreview}convert/</settings>
+	<version>1.1</version>
+	<requires>
+		<livestreet>1.*</livestreet>
+		<plugins>
+
+		</plugins>
+	</requires>
+	<description>
+		<lang name="default">Create preview images for topics</lang>
+		<lang name="russian">Создание превью изображений для топиков</lang>
+	</description>
+</plugin>

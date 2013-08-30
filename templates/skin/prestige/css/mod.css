@@ -1,0 +1,315 @@
+/*start header*/
+#header .logo {
+    background: url("../images/logo.png") no-repeat;
+    display: inline-block;
+    width: 122px;
+    height: 22px;
+}
+/*end header*/
+
+/*start nav-panel*/
+.nav-panel {
+    background: #e7e7e7;
+    line-height: 42px;
+    height: 44px;
+    box-shadow: 0 1px 0 0 #fff;
+    margin-bottom: 30px;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+}
+.nav-panel .nav-filter-wrapper {
+    margin: 0;
+}
+
+.nav-panel.fixed {
+    position: fixed;
+    top: 0;
+    /*width: 1135px;*/
+    z-index: 1;
+    -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 27px rgba(0, 0, 0, .2);
+}
+#nav-panel-dubl {
+    height: 44px;
+    width: 100%;
+    margin-bottom: 42px;
+    display: none;
+}
+/*start nav-panel*/
+
+
+/*start main-list-users*/
+.main-list-users {}
+.main-list-users ul.title-header {
+    margin-bottom: 25px;
+    height: 30px;
+    border-bottom: 1px solid #C8C8C8;
+    box-shadow: 0 1px 0 0 #FFF;
+    font-size: 14px;
+}
+.main-list-users ul.title-header li {
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+}
+.main-list-users ul.title-header li a,
+.main-list-users ul.title-header li span {
+    color: #888;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+}
+.main-list-users ul.title-header li a.desc,
+.main-list-users ul.title-header li span.desc {
+    background: url("../images/arr-5-bottom.png") no-repeat right center;
+    padding-right: 10px;
+    color: #393939;
+    border-bottom: 1px solid #717171;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+}
+.main-list-users ul.title-header li a.asc,
+.main-list-users ul.title-header li span.asc {
+    background: url("../images/arr-5-top.png") no-repeat right center;
+    padding-right: 10px;
+    color: #393939;
+    border-bottom: 1px solid #717171;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+}
+.main-list-users ul.title-header li.cell-number {
+    width: 35px;
+}
+.main-list-users ul.title-header li.cell-name {
+    width: 150px;
+}
+.main-list-users ul.title-header li.cell-rating {
+    width: 70px;
+}
+.main-list-users ul.title-header li.cell-reg {
+    width: 120px;
+    float: right;
+}
+
+.main-list-users ul.list-usr {}
+.main-list-users ul.list-usr li.one-user {
+    background: #FFF;
+    position: relative;
+    padding: 3px 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*хаки для FF*/
+@-moz-document url-prefix() {
+    .main-list-users ul.list-usr li.one-user {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.main-list-users ul.list-usr li.one-user ul {
+    overflow: hidden;
+}
+.main-list-users ul.list-usr li.one-user ul li {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-number {
+    text-align: center;
+    font-weight: bold;
+    color: #c8c8c8;
+    font-size: 14px;
+    float: left;
+    width: 20px;
+    margin-right: 5px;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-name {
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    width: 105px;
+    padding-left: 50px;
+    position: relative;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-name a {
+    text-decoration: none;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-name .avatar {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #FFF;
+    border-radius: 1px;
+    width: 30px;
+    height: 30px;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-rating {
+    font-size: 13px;
+    float: left;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-rating.positiv {
+    color: #51983c;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-rating.negative {
+    color: #ff0000;
+}
+.main-list-users ul.list-usr li.one-user ul li.cell-reg {
+    font-size: 13px;
+    float: right;
+    width: 120px;
+    text-align: center;
+    color: #888888;
+}
+/*end main-list-users*/
+
+
+/*start login-form*/
+#login-form,
+#registration-form,
+#invite-form,
+#reminder-form
+{
+    display: block;
+    width: 450px;
+    margin-left: -225px;
+    top: 150px;
+    position: absolute;
+    left: 50%;
+    color: #333;
+    border: 1px solid #FFF;
+    background: url("../images/noise.png") repeat scroll center center #F0F0F0;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 27px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+#login-form h2,
+#registration-form h2,
+#invite-form h2,
+#reminder-form h2
+{
+    color: #DA7133;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 15px 0 0 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#login-form .wraps,
+#registration-form .wraps,
+#invite-form .wraps,
+#reminder-form .wraps
+{
+    padding: 10px 23px 23px 23px;
+}
+#login-form .wraps .nav,
+#registration-form .wraps .nav,
+#invite-form .wraps .nav,
+#reminder-form .wraps .nav
+{
+    margin-bottom: 30px;
+}
+#login-form .wraps .nav li,
+#registration-form .wraps .nav li,
+#invite-form .wraps .nav li,
+#reminder-form .wraps .nav li {
+    margin-right: 48px;
+}
+#login-form .wraps .nav li:last-child,
+#registration-form .wraps .nav li:last-child,
+#invite-form .wraps .nav li:last-child,
+#reminder-form .wraps .nav li:last-child {
+    margin: 0;
+}
+#login-form .wraps .nav li a,
+#registration-form .wraps .nav li a,
+#invite-form .wraps .nav li a,
+#reminder-form .wraps .nav li a {
+    font-weight: bold;
+}
+/*end login-form*/
+
+/*start soc-links*/
+.soc-links {
+    height: 31px;
+    margin-bottom: 30px;
+}
+.soc-links li {
+    float: left;
+    margin-right: 17px;
+}
+.soc-links li:last-child {
+    margin: 0;
+}
+.soc-links li a {
+    display: inline-block;
+}
+.soc-links li.link-fb a {
+    background: url("../images/logins-fb.png") no-repeat;
+    width: 140px;
+    height: 31px;
+}
+.soc-links li.link-tw a {
+    background: url("../images/logins-tw.png") no-repeat;
+    width: 126px;
+    height: 31px;
+}
+.soc-links li.link-vk a {
+    background: url("../images/logins-vk.png") no-repeat;
+    width: 103px;
+    height: 31px;
+}
+/*end soc-links*/
+
+/*start error*/
+.page-error {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+}
+.name-error {
+    margin: 50px 0 60px;
+    font-size: 160px;
+    font-weight: bold;
+    color: #DEDEDE;
+    display: inline-block;
+    border: 14px solid #DEDEDE;
+    text-shadow: 1px 1px 1px #FFF;
+    -moz-box-shadow: 1px 1px 1px 0 #FFF;
+    -webkit-box-shadow: 1px 1px 1px 0 #FFF;
+    box-shadow: 1px 1px 1px 0 #FFF;
+    line-height: 325px;
+    border-radius: 190px;
+    padding: 0 25px;
+}
+.oops-error {
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #FFF;
+    color: #a9a9a9;
+    margin-bottom: 55px;
+}
+.text-error {
+    font-size: 34px;
+    text-shadow: 1px 1px 1px #FFF;
+    color: #C4C4C4;
+    margin-bottom: 40px;
+    line-height: 40px;
+    padding: 0 165px;
+}
+.link-error {
+    font-size: 34px;
+    text-shadow: 1px 1px 1px #FFF;
+    color: #c4c4c4;
+    margin-bottom: 55px;
+    line-height: 40px;
+}
+/*end error*/

@@ -1,0 +1,373 @@
+/* -------------------------------------------------------------------
+	ОСНОВНЫЕ СТИЛИ
+------------------------------------------------------------------- */
+
+body {
+    font-size: 13px;
+    font-family: "PT Sans", Arial, sans-serif;
+    line-height: 18px;
+    color: #999;
+    background: #fff url("../images/bg.jpg") repeat-y fixed top center;
+}
+
+/* Снипеты
+---------------------------------------------------- */
+.fl-r {
+    float: right;
+}
+.fl-l {
+    float: left;
+}
+
+/* Снипеты
+---------------------------------------------------- */
+.icox {
+    background: none!important;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    color: #000;
+}
+
+
+/* Ссылки
+---------------------------------------------------- */
+a {
+    color: #da7133;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out 0s;
+}
+a.js-style {
+    color: #da7133;
+    text-decoration: none;
+    transition: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ab5a2a;
+}
+
+.text a:visited,
+.topic .topic-header .topic-title a:visited,
+.item-list li a:visited {}
+
+a.link-dashed {
+    border-bottom: 1px dashed #da7133;
+}
+
+a.link-dashed:hover {
+    border-color: #999999;
+}
+
+a.link-dotted {
+    text-decoration: none;
+    border-bottom: 1px dashed #DA7133;
+}
+
+a.link-dotted:hover {
+    border-color: #999999;
+}
+
+/* Заголовки
+---------------------------------------------------- */
+h2.page-header {
+    color: #333;
+    font-size: 27px;
+    line-height: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2.page-header span {
+    color: #aaa;
+}
+
+h2.header-table {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+
+/* Stat
+---------------------------------------------------- */
+.stat-performance {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+    margin: 20px auto 0;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.stat-performance table {
+    margin: 0 auto;
+}
+
+.stat-performance table td {
+    width: 200px;
+    vertical-align: top;
+}
+
+.stat-performance h4 {
+    font-weight: bold;
+}
+
+
+/* Userfeed
+---------------------------------------------------- */
+.userfeed-get-more {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    height: 2.5em;
+    padding-top: 1em;
+}
+
+.userfeed-get-more:hover {
+    background: #f0f7fd;
+}
+
+.userfeed_loading {
+    background: #F7F7F7 url(../images/loader.gif) no-repeat center;
+}
+
+/* Stream
+---------------------------------------------------- */
+.stream-get-more {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    background: #fafafa;
+    color: #aaa;
+    border-top: 1px solid #eee;
+    text-decoration: none;
+}
+
+.stream-get-more:hover {
+    background: #fff;
+}
+
+.stream_loading {
+    background: #fff url(../images/loader.gif) no-repeat center;
+}
+
+.stream-comment-preview {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border-left: 5px solid #C8C8C8;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+.stream-list {
+    margin: 5px 0 20px 0px;
+}
+
+.stream-list li.stream-item {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-bottom: 1px solid #C9C9C9;
+    border-top: 1px solid #FFFFFF;
+    margin-bottom: 10px;
+    min-height: 48px;
+    padding: 10px 15px 10px 70px;
+    position: relative;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+
+.stream-list li.stream-item .avatar {
+    border: 1px solid #FFFFFF;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 2px 2px rgba(0, 0, 0, 0.15);
+    left: 10px;
+    position: absolute;
+    top: 8px;
+}
+
+.stream-list li.stream-item .date {
+    display: block;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.stream-list li.stream-item a {
+    text-decoration: none;
+}
+
+.stream-list li.stream-item a:hover {
+    text-decoration: underline;
+}
+
+.stream-list li.stream-header-date {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/* Userfields
+---------------------------------------------------- */
+.userfield-list {
+    width: 450px;
+}
+
+.userfield-list li {
+    background: #eee;
+    margin-bottom: 1px;
+    padding: 10px 10px;
+    overflow: hidden;
+    zoom: 1;
+    line-height: 12px;
+    color: #777;
+}
+
+.userfield-list li .userfield-actions {
+    float: right;
+}
+
+.userfield-list li .userfield_admin_name {
+    font-weight: bold;
+    color: #333;
+}
+
+.userfield-add {
+    text-decoration: none;
+    border-bottom: 1px dashed #70AAE0;
+}
+
+.userfield-add:hover {
+    color: #333;
+    border-color: #333;
+}
+
+/* Misc
+---------------------------------------------------- */
+.avatar-edit {
+    margin-bottom: 15px;
+}
+
+.avatar-edit img {
+    vertical-align: bottom;
+}
+
+.avatar-edit label {
+    margin-top: 10px;
+}
+
+.drafts {
+    float: right;
+    margin-top: 10px;
+}
+
+.poll-create {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: #f7f7f7;
+}
+
+.question-list {
+    margin-bottom: 15px;
+}
+
+.question-list li {
+    margin-bottom: 5px;
+}
+
+.question-list li .input-text {
+    margin-right: 10px;
+}
+
+.help {
+    display: none;
+    position: relative;
+    padding: 10px 7px 13px;
+    background: #fafafa;
+    margin-top: 13px;
+    font-size: 11px;
+    line-height: 16px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 5px #eaeaea inset;
+    box-shadow: 0 0 5px #eaeaea inset;
+    color: #555555;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.help:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-color: transparent transparent #eee transparent;
+    border-style: solid;
+}
+
+.help h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.help .help-col {
+    float: left;
+    width: 250px;
+    padding: 0 10px;
+}
+
+.help .help-col.help-wide {
+    float: none;
+    width: 96%;
+}
+
+.help .help-item {
+    margin-bottom: 20px;
+}
+
+.help .help-item:last-child {
+    margin-bottom: 0;
+}
+
+.help .help-item h4 {
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.help .help-item h4 a {
+    border-bottom: 1px dashed #DA7133;
+    color: #DA7133;
+}
+
+
+/*Страница выхода*/
+.exit-page {
+    display: table;
+    width: 100%!important;
+    height: 100%;
+    overflow: hidden;
+    float: none!important;
+    margin: 0!important;
+}
+.exit-page .sub-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.exit-page .sub-wrapper .content-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: -45px auto 0;
+}
+.exit-page .sub-wrapper .content-wrapper .page-header {
+    color: #FFFFFF;
+    font-family: Pt Sans caption;
+    font-size: 35px;
+}

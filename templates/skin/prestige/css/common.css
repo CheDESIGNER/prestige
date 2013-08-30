@@ -1,0 +1,677 @@
+/* -------------------------------------------------------------------
+	ОБЩИЕ СТИЛИ
+------------------------------------------------------------------- */
+
+/* Голосование 
+---------------------------------------------------- */
+.vote .vote-count {
+    color: #AAAAAA;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.vote .vote-count a {
+    text-decoration: none;
+    color: #999;
+    outline: none;
+}
+
+.vote.vote-count-positive .vote-count {
+    color: #390;
+}
+
+.vote.vote-count-negative .vote-count {
+    color: #f00;
+}
+
+.vote .vote-line {
+    /*background: url("../images/line-3.png") no-repeat;*/
+    height: 16px;
+    width: 1px;
+    position: relative;
+    top: 3px;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+.vote .vote-up,
+.vote .vote-down {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: text-top;
+    width: 15px;
+    height: 14px;
+    opacity: 1;
+}
+
+.vote .vote-up {}
+.vote .vote-up .icox {
+    color: #999;
+    position: relative;
+    left: -3px;
+    top: 0px;
+}
+
+.vote .vote-down {}
+.vote .vote-down .icox {
+    color: #999;
+    position: relative;
+    top: -1px;
+    left: 8px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleH(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.vote .vote-up:hover {}
+.vote .vote-up:hover .icox {
+    color: #6da95b;
+}
+
+.vote .vote-down:hover {}
+.vote .vote-down:hover .icox {
+    color: #e77976;
+}
+
+.vote.voted.voted-up 	.vote-up {}
+.vote.voted.voted-up 	.vote-up .icox {
+    color: #6da95b;
+}
+
+.vote.voted.voted-down 	.vote-down {}
+.vote.voted.voted-down 	.vote-down .icox {
+    color: #e77976;
+}
+
+.vote.voted.voted-up 	.vote-down{
+    opacity: .3;
+    filter: alpha(opacity = 30);
+}
+
+.vote.voted.voted-down 	.vote-up {
+    opacity: .3;
+    filter: alpha(opacity = 30);
+}
+
+/* Избранное
+---------------------------------------------------- */
+.favourite {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-top;
+    opacity: .3;
+    filter: alpha(opacity = 30);
+    cursor: pointer;
+    position: relative;
+}
+.favourite.active {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+.favourite:hover {
+    opacity: .8;
+    filter: alpha(opacity = 80);
+}
+
+.favourite .icox {
+    font-size: 12px;
+    color: #888;
+}
+.favourite.active .icox {}
+.favourite:hover .icox {}
+
+.favourite-count {
+    margin-left: 0;
+    color: #DA7133;
+}
+
+/* Пагинация
+---------------------------------------------------- */
+.pagination {
+    position: absolute;
+    left: 0;
+    bottom: -55px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial;
+    text-shadow: 1px 1px 0 #fff;
+}
+.pagination ul {
+    display: inline-block;
+    overflow: hidden;
+    zoom: 1;
+    line-height: 1em;
+}
+
+.pagination ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+.pagination ul li span,
+.pagination ul li a {
+    border-bottom: 1px solid #CECFD0;
+    border-radius: 4px 4px 4px 4px;
+    border-top: 1px solid #FFFFFF;
+    box-shadow: 0 0 2px 0 #D5D5D5;
+    color: #969DA1;
+    float: left;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 7px 14px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: capitalize;
+}
+
+.pagination ul li a:hover {
+    background: none repeat scroll 0 0 #FCFCFC;
+    color: #DA7133;
+    text-decoration: none;
+}
+
+.pagination ul li.active span {
+    background: none repeat scroll center bottom transparent;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #CECFD0;
+    box-shadow: 0 0 5px #DDDDDD inset;
+}
+
+.pagination ul li i {
+    opacity: .5;
+    filter: alpha(opacity = 50);
+}
+
+/* Actions
+---------------------------------------------------- */
+.actions {
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 10px;
+}
+
+.actions li {
+    float: left;
+    margin-right: 10px;
+}
+
+.actions li a {
+    color: #D23232;
+}
+
+.actions li a:hover {
+    text-decoration: underline;
+}
+
+.actions li a.link-dotted {
+    border-color: #f00;
+}
+
+.actions li a.link-dotted:hover {
+    border-color: #06e;
+    color: #06e;
+    text-decoration: none;
+}
+
+/* Toolbar
+---------------------------------------------------- */
+.toolbar {
+    float: right;
+    position: fixed;
+    top: 220px;
+    right: 10px;
+    z-index: 100;
+}
+
+.toolbar section {
+    width: 34px;
+    line-height: 14px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+    margin-bottom: 10px;
+}
+
+.toolbar section a {
+    display: block;
+    padding: 10px;
+}
+
+.toolbar section a:hover {
+    background: #fafafa;
+}
+
+.toolbar section i {
+    display: block;
+}
+
+/* Admin button */
+.toolbar .toolbar-admin a {
+    display: block;
+}
+
+/* Update comments button */
+.toolbar .toolbar-update {
+}
+
+.toolbar .toolbar-update .update-comments {
+    padding: 9px;
+}
+
+.toolbar .toolbar-update .update-comments i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/update.gif) no-repeat;
+}
+
+.toolbar .toolbar-update .update-comments.active i {
+    background-position: -16px 0;
+}
+
+.toolbar .toolbar-update .new-comments {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    color: #333;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* Topic navigation */
+.toolbar .toolbar-topic a.toolbar-topic-prev {
+    border-bottom: 1px solid #eee;
+}
+
+/* Scroll up */
+.toolbar .toolbar-scrollup {
+    display: none;
+}
+
+/* Список пользователей
+---------------------------------------------------- */
+.user-list-avatar {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.user-list-avatar li {
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+}
+
+.user-list-avatar li img {
+    margin-bottom: 2px;
+    display: block;
+}
+
+/* Поиск
+---------------------------------------------------- */
+.search {
+    width: 200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search .input-text {
+    width: 200px;
+    padding-right: 25px;
+}
+
+.search .input-submit {
+    border: none;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+    opacity: .7;
+    filter: alpha(opacity = 70);
+}
+
+.search .input-submit:hover {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+.search.search-item {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.search.search-item .input-text {
+    width: 100%;
+    padding-right: 5px;
+}
+
+.search-abc {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.search-abc div {
+    display: inline-block;
+}
+
+.search-abc div span {
+    color: #d35400;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.search-abc div.active span {
+    color: #333;
+    border: none;
+}
+
+.nav.nav-filter .abc {
+    position: relative;
+    color: #393939;
+    padding: 0 20px;
+    min-width: 90px;
+    float: left;
+    text-shadow: 0 1px 0 #FFF;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-right: 1px solid #D8D8D8;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    line-height: 44px;
+    height: 42px;
+}
+.nav.nav-filter .search-box {
+    position: relative;
+    color: #393939;
+    padding: 0 20px;
+    min-width: 90px;
+    float: right;
+    text-shadow: 0 1px 0 #FFF;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    line-height: 44px;
+    height: 42px;
+}
+.nav.nav-filter .search-box form {
+    margin: 0;
+    position: relative;
+}
+.nav.nav-filter .search-box form input {
+    font-family: "PT Sans", serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: 0;
+    background: none;
+    text-shadow: 0 1px 0 #FFF;
+    text-align: right;
+    float: right;
+    padding: 2px 4px;
+    position: relative;
+    top: 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.nav.nav-filter .search-box form input:focus {
+    outline: none;
+}
+
+.search-tags {
+    margin-bottom: 15px;
+}
+
+/* Облако тегов
+---------------------------------------------------- */
+.tag-cloud {
+    width: 100%;
+}
+
+.tag-cloud li {
+    display: inline;
+    margin-right: 5px;
+    line-height: 22px;
+}
+
+.tag-cloud li a {
+    text-decoration: none;
+}
+
+.tag-cloud li .tag-size-1 {
+    font-size: 12px!important;
+}
+
+.tag-cloud li .tag-size-2 {
+    font-size: 12px!important;
+}
+
+.tag-cloud li .tag-size-3 {
+    font-size: 14px!important;
+}
+
+.tag-cloud li .tag-size-4 {
+    font-size: 14px!important;
+}
+
+.tag-cloud li .tag-size-5 {
+    font-size: 18px!important;
+}
+
+.tag-cloud li .tag-size-6 {
+    font-size: 18px!important;
+}
+
+.tag-cloud li .tag-size-7 {
+    font-size: 20px!important;
+}
+
+.tag-cloud li .tag-size-8 {
+    font-size: 20px!important;
+}
+
+.tag-cloud li .tag-size-9 {
+    font-size: 22px!important;
+}
+
+.tag-cloud li .tag-size-10 {
+    font-size: 22px!important;
+}
+
+/* Item List
+---------------------------------------------------- */
+.item-list {
+    /*border-top: 1px solid #eee;*/
+}
+
+.item-list li {
+    min-height: 35px;
+    padding: 0 0 15px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c8c8c8;
+    box-shadow: 0 1px 0 0 #fff;
+    position: relative;
+    zoom: 1;
+}
+.item-list li:last-child {
+    margin: 0;
+}
+
+.item-list li p {
+    padding-top: 2px;
+    font-size: 11px;
+}
+
+.item-list li a {
+    text-decoration: none;
+}
+
+.item-list li .avatar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    margin-right: 10px;
+}
+
+.item-list li:hover time {
+    color: #DA7133;
+    transition: all 0.25s ease-in-out 0s;
+}
+.item-list li time {
+    color: #c8c8c8;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.item-list li .author {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #da7133;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.item-list li .name-topic {
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 10px;
+    color: #999999;
+    line-height: 22px;
+}
+.item-list li:hover .name-topic {
+    text-decoration: none;
+    color: #da7133;
+}
+
+.item-list li .icox {
+    position: relative;
+    left: -4px;
+    top: 3px;
+    font-size: 13px;
+    color: #C8C8C8;
+}
+
+.item-list li .img-comment {
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* Хелперы
+---------------------------------------------------- */
+.mt-10 {
+    margin-bottom: 10px !important;
+}
+
+.mt-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.ta-c {
+    text-align: center !important;
+}
+
+.ta-r {
+    text-align: right !important;
+}
+
+.va-m {
+    vertical-align: middle;
+}
+
+.fl-r {
+    float: right !important;
+}
+
+.fl-l {
+    float: left !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.word-wrap {
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Разное
+---------------------------------------------------- */
+.system-message-error {
+    background: #f0c8c8;
+    color: #b22626;
+    border: 1px solid;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.system-message-notice {
+    background: none repeat scroll 0 0 #DAFAD8;
+    border: 1px solid;
+    color: #4BB23B;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.notice-empty {
+    color: #000;
+}
+
+.loader {
+    background: #fafafa url(../images/loader.gif) 50% 50% no-repeat;
+}
+
+.user, .ls-user {
+    font-weight: bold;
+    color: #333;
+}
+
+.ls-user:before {
+    background: url("../images/user.png") no-repeat scroll 0 0 transparent;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 3px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.user.inactive {
+    color: #aaa;
+}

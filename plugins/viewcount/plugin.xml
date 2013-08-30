@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <name>
+    <lang name="default">Viewcount</lang>
+  </name>
+  <author>
+    <lang name="default">NS</lang>
+  </author>
+  <homepage>http://nfg.kz</homepage>
+  <version>1.0.0</version>
+  <requires>
+    <livestreet>1.0</livestreet>
+    <plugins></plugins>
+  </requires>
+  <description>
+    <lang name="default">Showing views count.</lang>
+    <lang name="russian">Показывает кол-во просмотров топика.</lang>
+  </description>
+</plugin>
