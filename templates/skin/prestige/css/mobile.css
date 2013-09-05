@@ -523,6 +523,20 @@
 
 @media (max-width: 480px) {
 
+    .modal {
+        top: 7%!important;
+    }
+
+    .modal-image-upload {
+        width: 300px!important;
+        margin-left: -152px!important;
+    }
+
+    .modal .close {
+        top: 21px!important;
+        right: 20px!important;
+    }
+
     iframe {
         width: auto!important;
     }
