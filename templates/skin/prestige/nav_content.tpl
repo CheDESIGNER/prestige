@@ -9,14 +9,25 @@
 
             <li class="creat-nav">
                 <a href="#" class="parent js-style" id="creat-nav"><i class="icox icon-pencil"></i><span>{$aLang.prest_txt_8}</span> <i class="caret-pre"></i></a>
-                <ul id="creat-nav-sub" class="sub-menu">
-                    <li class="link-topic"><a href="{router page='topic'}add"><i class="icox icon-doc-new"></i>{$aLang.prest_txt_19}</a></li>
-                    <li class="link-poll"><a href="{router page='question'}add"><i class="icox icon-chart-bar"></i>{$aLang.prest_txt_20}</a></li>
-                    <li class="link-link"><a href="{router page='link'}add"><i class="icox icon-link"></i>{$aLang.prest_txt_21}</a></li>
-                    <li class="link-photo"><a href="{router page='photoset'}add"><i class="icox icon-picture"></i>{$aLang.prest_txt_22}</a></li>
-                    <li class="link-blog"><a href="{router page='blog'}add"><i class="icox icon-folder-empty"></i>{$aLang.prest_txt_23}</a></li>
-                    <li class="link-blank"><a href="{router page='topic'}saved/"><i class="icox icon-edit"></i>{$aLang.prest_txt_24} {if $iUserCurrentCountTopicDraft}({$iUserCurrentCountTopicDraft}){/if}</a></li>
-                </ul>
+                {if $oUserCurrent}
+                    <ul id="creat-nav-sub" class="sub-menu">
+                        <li class="link-topic"><a href="{router page='topic'}add"><i class="icox icon-doc-new"></i>{$aLang.prest_txt_19}</a></li>
+                        <li class="link-poll"><a href="{router page='question'}add"><i class="icox icon-chart-bar"></i>{$aLang.prest_txt_20}</a></li>
+                        <li class="link-link"><a href="{router page='link'}add"><i class="icox icon-link"></i>{$aLang.prest_txt_21}</a></li>
+                        <li class="link-photo"><a href="{router page='photoset'}add"><i class="icox icon-picture"></i>{$aLang.prest_txt_22}</a></li>
+                        <li class="link-blog"><a href="{router page='blog'}add"><i class="icox icon-folder-empty"></i>{$aLang.prest_txt_23}</a></li>
+                        <li class="link-blank"><a href="{router page='topic'}saved/"><i class="icox icon-edit"></i>{$aLang.prest_txt_24} {if $iUserCurrentCountTopicDraft}({$iUserCurrentCountTopicDraft}){/if}</a></li>
+                    </ul>
+                {else}
+                    <ul id="creat-nav-sub" class="sub-menu">
+                        <li class="link-topic"><a href="#" class="js-login-form-show"><i class="icox icon-doc-new"></i>{$aLang.prest_txt_19}</a></li>
+                        <li class="link-poll"><a href="#" class="js-login-form-show"><i class="icox icon-chart-bar"></i>{$aLang.prest_txt_20}</a></li>
+                        <li class="link-link"><a href="#" class="js-login-form-show"><i class="icox icon-link"></i>{$aLang.prest_txt_21}</a></li>
+                        <li class="link-photo"><a href="#" class="js-login-form-show"><i class="icox icon-picture"></i>{$aLang.prest_txt_22}</a></li>
+                        <li class="link-blog"><a href="#" class="js-login-form-show"><i class="icox icon-folder-empty"></i>{$aLang.prest_txt_23}</a></li>
+                        <li class="link-blank"><a href="#" class="js-login-form-show"><i class="icox icon-edit"></i>{$aLang.prest_txt_24} {if $iUserCurrentCountTopicDraft}({$iUserCurrentCountTopicDraft}){/if}</a></li>
+                    </ul>
+                {/if}
             </li>
 
             {hook run='menu_blog'}
