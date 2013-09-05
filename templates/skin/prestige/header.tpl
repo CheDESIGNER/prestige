@@ -111,28 +111,28 @@
                 function getUnitWidth() {
                     var width;
                     if ($container.width() <= 320) {
-                        console.log("320");
+                        //console.log("320");
                         width = Math.floor($container.width() / 1);
                     } else if ($container.width() >= 321 && $container.width() <= 480) {
-                        console.log("321 - 480");
+                        //console.log("321 - 480");
                         width = Math.floor($container.width() / 1);
                     } else if ($container.width() >= 481 && $container.width() <= 768) {
-                        console.log("481 - 768");
+                        //console.log("481 - 768");
                         width = Math.floor($container.width() / 2);
                     } else if ($container.width() >= 769 && $container.width() <= 979) {
-                        console.log("769 - 979");
+                        //console.log("769 - 979");
                         width = Math.floor($container.width() / 3);
                     } else if ($container.width() >= 980 && $container.width() <= 1200) {
-                        console.log("980 - 1200");
+                        //console.log("980 - 1200");
                         width = Math.floor($container.width() / 4);
                     } else if ($container.width() >= 1201 && $container.width() <= 1600) {
-                        console.log("1201 - 1600");
+                        //console.log("1201 - 1600");
                         width = Math.floor($container.width() / 4);
                     } else if ($container.width() >= 1601 && $container.width() <= 1824) {
-                        console.log("1601 - 1824");
+                        //console.log("1601 - 1824");
                         width = Math.floor($container.width() / 5);
                     } else if ($container.width() >= 1825) {
-                        console.log("1825");
+                        //console.log("1825");
                         width = Math.floor($container.width() / 5);
                     }
                     return width;
@@ -147,7 +147,7 @@
                     });
 
                     if ($container.width() >= 321 && $container.width() <= 480) {
-                        console.log("eccoci 321");
+                        //console.log("eccoci 321");
                         $container.children(".width2").css({
                             width: unitWidth * 1
                         });
@@ -159,7 +159,7 @@
                         });
                     }
                     if ($container.width() >= 481) {
-                        console.log("480");
+                        //console.log("480");
                         $container.children(".width6").css({
                             width: unitWidth * 6
                         });
