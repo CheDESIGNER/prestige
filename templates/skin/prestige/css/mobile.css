@@ -244,6 +244,11 @@
    }
 }
 
+@media (min-width: 768px) {
+    #mobile-usermenu {
+        display: none!important;
+    }
+}
 
 @media (max-width: 767px) {
 
