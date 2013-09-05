@@ -518,6 +518,10 @@
 
 @media (max-width: 480px) {
 
+    iframe {
+        width: auto!important;
+    }
+
     .name-error {
         margin: 0!important;
         font-size: 10em!important;
