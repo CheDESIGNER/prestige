@@ -518,6 +518,21 @@
 
 @media (max-width: 480px) {
 
+    .name-error {
+        margin: 0!important;
+        font-size: 10em!important;
+        border: none!important;
+        -moz-box-shadow: none!important;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+        line-height: 180px!important;
+        padding: 0 25px;
+    }
+    .text-error {
+        font-size: 26px!important;
+        padding: 0!important;
+    }
+
     .item-list li.js-title-comment {
         display: none;
     }
