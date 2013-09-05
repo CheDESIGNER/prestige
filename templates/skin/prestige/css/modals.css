@@ -1,11 +1,12 @@
 /* --------------------------------------------
-	��������� ����
+	Стили модальны[ окон
 -------------------------------------------- */
 
 .modal {
     display: none;
 
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     top: 25%;
     left: 50%;
 
@@ -64,7 +65,7 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    text-shadow: 0 1px 0 #FFFFFF; 
+    text-shadow: 0 1px 0 #FFFFFF;
 }
 
 .modal .modal-content {
