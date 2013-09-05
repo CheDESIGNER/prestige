@@ -93,7 +93,7 @@ jQuery(document).ready(function($){
 		$('.js-title-comment, .js-title-topic').poshytip({
 			className: 'infobox-yellow',
 			alignTo: 'target',
-			alignX: 'left',
+            alignX: 'right',
 			alignY: 'center',
 			offsetX: 10,
 			liveEvents: true,
