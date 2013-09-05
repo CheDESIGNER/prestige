@@ -60,7 +60,6 @@ $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
 $config['head']['default']['js'][] = '___path.static.skin___/js/bootstrap.js';
 
 $config['head']['default']['css'] = array(
-	 "___path.static.skin___/css/prestige.css",
     "___path.static.skin___/css/bootstrap.css",
     "___path.static.skin___/css/mobile.css",
     "___path.static.skin___/css/mod.css",

@@ -56,6 +56,8 @@
 
 	{$aHtmlHeadFiles.css}
 
+    <link rel="stylesheet" type="text/css" href="{cfg name='path.static.skin'}/css/prestige.css" />
+
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
