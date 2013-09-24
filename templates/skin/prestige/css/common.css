@@ -134,9 +134,7 @@
 /* Пагинация
 ---------------------------------------------------- */
 .pagination {
-    position: absolute;
-    left: 0;
-    bottom: -55px;
+    margin-top: 15px;
     width: 100%;
     text-align: center;
     font-size: 14px;
