@@ -252,7 +252,7 @@
 }
 
 .blogs-lists-style-2 ul.lists .one-blog .avatar {
-    outline: 1px solid #FFF;
+    border: 1px solid #FFF;
     border-radius: 1px;
     box-shadow: 0 3px 7px -5px #000;
 }
