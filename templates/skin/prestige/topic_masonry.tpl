@@ -47,7 +47,7 @@
         <div class="topic-infos">
             <div class="topic-info-comments">
                 <a href="{$oTopic->getUrl()}#comments" title="{$oTopic->getCountComment()} {$oTopic->getCountComment()|declension:$aLang.comment_declension:'russian'}">
-                    {$oTopic->getCountComment()}
+                    <i class="icox icon-comment"></i>{$oTopic->getCountComment()}
                 </a>
                 {if $oTopic->getCountCommentNew()}<span>+{$oTopic->getCountCommentNew()}</span>{/if}
             </div>
