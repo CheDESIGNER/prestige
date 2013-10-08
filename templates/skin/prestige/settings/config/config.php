@@ -21,7 +21,7 @@ $config['view']['theme'] = 'default';
  * on - включено
  * off - выключено
  */
-$config['view']['masonry']['type'] = 'on';
+$config['view']['masonry']['type'] = 'off';
 $config['view']['masonry']['bigtopic'] = 'on';
 
 /* Подключает лист топиков с большой очень большой привью
@@ -36,6 +36,11 @@ $config['view']['bigpreview']['type'] = 'off';
  */
 $config['view']['ogmeta']['type'] = 'on';
 
+/* Отключение тегов в ленте топивок в тексте ДО <cut>
+ * on - теги включены
+ * off - теги выключены
+ */
+$config['view']['text']['cuttag'] = 'off';
 
 
 /*

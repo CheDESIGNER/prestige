@@ -5,7 +5,11 @@
 	{hook run='topic_content_begin' topic=$oTopic bTopicList=$bTopicList}
 	
 	{if $bTopicList}
-		{$oTopic->getTextShort()|strip|strip_tags:true}
+        {if {cfg name='view.text.cuttag'} == 'off'}
+            {$oTopic->getTextShort()|strip|strip_tags:true}
+        {else}
+            {$oTopic->getTextShort()}
+        {/if}
 		{if $oTopic->getTextShort()!=$oTopic->getText()}
 			<a href="{$oTopic->getUrl()}#cut" title="{$aLang.topic_read_more}" class="link-more">
 				{if $oTopic->getCutText()}
