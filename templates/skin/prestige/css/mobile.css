@@ -154,8 +154,10 @@
         text-align: center;
         margin: 45px auto 0!important;
     }
-    .exit-page .sub-wrapper .content-wrapper .page-header {
+    .exit-page .sub-wrapper .content-wrapper .page-header,
+    .confirm-page .sub-wrapper .content-wrapper .page-header {
         font-size: 16px!important;
+        text-shadow: 0 0 9px rgba(0, 0, 0, 0.65)
     }
 }
 

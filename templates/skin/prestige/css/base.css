@@ -348,26 +348,38 @@ h2.header-table {
 
 
 /*Страница выхода*/
-.exit-page {
+.exit-page,
+.confirm-page {
     display: table;
     width: 100%!important;
     height: 100%;
     overflow: hidden;
     float: none!important;
     margin: 0!important;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.65)
 }
-.exit-page .sub-wrapper {
+.exit-page a,
+.confirm-page a {
+    text-shadow: none;
+}
+.exit-page .sub-wrapper,
+.confirm-page .sub-wrapper {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
 }
-.exit-page .sub-wrapper .content-wrapper {
+.exit-page .sub-wrapper .content-wrapper,
+.confirm-page .sub-wrapper .content-wrapper {
     width: 100%;
     text-align: center;
     margin: -45px auto 0;
 }
-.exit-page .sub-wrapper .content-wrapper .page-header {
+.exit-page .sub-wrapper .content-wrapper .page-header,
+.confirm-page .sub-wrapper .content-wrapper .page-header {
     color: #FFFFFF;
-    font-family: Pt Sans caption;
+    font-family: "Pt Sans", sans-serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     font-size: 35px;
 }

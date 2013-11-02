@@ -216,7 +216,7 @@
 		ls.registry.set('block_stream_show_tip',{json var=$oConfig->Get('block.stream.show_tip')});
 	</script>
 
-    {if $sAction=='login' && $sEvent=='exit'}
+    {if ($sAction=='login' && $sEvent=='exit') || ($sAction=='registration' && $sEvent=='confirm')}
         <style>
             html, body {
                 height: 100%;
@@ -279,6 +279,7 @@
 					   {if $sAction=='profile' || $sAction=='talk' || $sAction=='settings' || $sAction=='blogs'}profile-page{/if}
 					   {if $sAction=='people'}people-page{/if}
 					   {if $sAction=='login' && $sEvent=='exit'}exit-page{/if}
+					   {if $sAction=='registration' && $sEvent=='confirm'}confirm-page{/if}
 					   {if $sMenuHeadItemSelect=='blog' && $sAction!='index'}blog-page{/if}
 					   {if {cfg name='view.masonry.type'} == 'on'}masonry-on
 					   {elseif {cfg name='view.bigpreview.type'} == 'on'}bigpreview-on{/if}
