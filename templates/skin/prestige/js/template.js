@@ -297,6 +297,7 @@ jQuery(document).ready(function($){
 
     // Дроп меню создать
     $('#creat-nav').click(function(event) {
+        event.preventDefault();
         event.stopPropagation();
         if ($("li.creat-nav").hasClass("active") == true) {
             $('#creat-nav-sub').hide();
@@ -318,6 +319,7 @@ jQuery(document).ready(function($){
 
     // Дроп меню блоги
     $('#blogs-nav').click(function(event) {
+        event.preventDefault();
         event.stopPropagation();
         if ($("li.blogs-nav").hasClass("active") == true) {
             $('#blogs-nav-sub').hide();
@@ -339,6 +341,7 @@ jQuery(document).ready(function($){
 
     // Дроп меню популярное
     $('#popular-nav').click(function(event) {
+        event.preventDefault();
         event.stopPropagation();
         if ($("li.popular-nav").hasClass("active") == true) {
             $('#popular-nav-sub').hide();
@@ -360,6 +363,7 @@ jQuery(document).ready(function($){
 
     // Дроп меню теги
     $('#tag-nav').click(function(event) {
+        event.preventDefault();
         event.stopPropagation();
         if ($("li.tag-nav").hasClass("active") == true) {
             $('#tag-nav-sub').hide();
