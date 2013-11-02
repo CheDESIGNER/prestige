@@ -12,7 +12,7 @@
  */
 $config['block']['rule_panel'] = array(
     'action'  => array(
-        'index','blogs','people','blog','profile','talk','settings','my','personal_blog','topic','comments','search','stream'
+        'index','blogs','people','blog','profile','talk','settings','my','personal_blog','topic','comments','search','stream','tag'
     ),
     'blocks'  => array(
         'panel_tags' => array('tags'=>array('priority'=>50)),
