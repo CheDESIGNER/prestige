@@ -2,7 +2,7 @@
 	{foreach from=$aBlogs item=oBlog}
 		<li>
 			
-			{if $oBlog->getType()=='close'}<i title="{$aLang.blog_closed}" class="icon icon-lock"></i>{/if}
+			{if $oBlog->getType()=='close'}<i title="{$aLang.blog_closed}" class="icox icon-lock"></i>{/if}
 			<a href="{$oBlog->getUrlFull()}">{$oBlog->getTitle()|escape:'html'}</a>
 			
 			<p>{$aLang.blog_rating}: <strong>{$oBlog->getRating()}</strong></p>

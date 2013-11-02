@@ -18,7 +18,7 @@
                     </a>
 
                     {if $oBlog->getType() == 'close'}
-                        <i title="{$aLang.blog_closed}" class="icon-lock"></i>
+                        <i title="{$aLang.blog_closed}" class="icox icon-lock"></i>
                     {/if}
 
                     <a href="{$oBlog->getUrlFull()}" class="title">{$oBlog->getTitle()|escape:'html'}</a>

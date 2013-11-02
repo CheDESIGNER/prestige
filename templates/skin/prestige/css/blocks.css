@@ -439,12 +439,12 @@
     line-height: 32px;
 }
 .block.blog-left-info .title i {
-    background: url("../images/ico-39.png") no-repeat;
     width: 8px;
     height: 10px;
-    position: absolute;
-    left: -18px;
+    position: relative;
+    left: -5px;
     top: 11px;
+    color: #FFF;
 }
 .block.blog-left-info .topics {
     font-size: 13px;

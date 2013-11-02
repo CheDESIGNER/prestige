@@ -68,11 +68,12 @@
                     </ul>
                 {/if}
 
-                {if $oBlog->getType() == 'close'}
-                    <i title="{$aLang.blog_closed}" class="icon-lock"></i>
-                {/if}
-
-                <a href="{$oBlog->getUrlFull()}" class="title" id="page-blog-title">{$oBlog->getTitle()|escape:'html'}</a>
+                <a href="{$oBlog->getUrlFull()}" class="title" id="page-blog-title">
+                    {if $oBlog->getType() == 'close'}
+                        <i title="{$aLang.blog_closed}" class="icox icon-lock"></i>
+                    {/if}
+                    {$oBlog->getTitle()|escape:'html'}
+                </a>
 
                 {if $oUserCurrent}
                     {if $oUserCurrent->getId() != $oBlog->getOwnerId() and $oBlog->getType() == 'open'}

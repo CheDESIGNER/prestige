@@ -169,6 +169,11 @@
     padding-top: 8px;
     display: inline-block;
 }
+.blogs-lists ul.lists .one-blog .name-blog .title i {
+    position: relative;
+    top: 9px;
+    left: -2px;
+}
 .blogs-lists ul.lists .one-blog .name-blog .join-link {
     position: relative;
     padding: 3px 7px;
@@ -313,12 +318,13 @@
     width: 205px;
 }
 .blogs-lists-style-2 ul.lists .one-blog .title i {
-    background: url("../images/ico-39.png") no-repeat;
     width: 8px;
     height: 10px;
     position: absolute;
-    left: -18px;
-    top: 11px;
+    left: -20px;
+    top: 9px;
+    color: #FFF;
+    font-size: 13px;
 }
 .blogs-lists-style-2 ul.lists .one-blog .topics {
     font-size: 13px;

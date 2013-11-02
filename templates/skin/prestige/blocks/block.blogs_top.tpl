@@ -1,7 +1,7 @@
 <ul>
 	{foreach from=$aBlogs item=oBlog}
 		<li>
-			<a href="{$oBlog->getUrlFull()}">{if $oBlog->getType()=='close'}<i title="{$aLang.blog_closed}" class="icon icon-lock"></i>{/if} {$oBlog->getTitle()|escape:'html'|truncate:25:'...'}</a>
+			<a href="{$oBlog->getUrlFull()}">{if $oBlog->getType()=='close'}<i title="{$aLang.blog_closed}" class="icox icon-lock"></i>{/if} {$oBlog->getTitle()|escape:'html'|truncate:25:'...'}</a>
 		</li>
 	{/foreach}
     {* Ссылка на все блоги внизу
