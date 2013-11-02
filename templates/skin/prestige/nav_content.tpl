@@ -137,59 +137,67 @@
         </form>
 
         {if $sAction!='registration'}
-            <script type="text/javascript">
-                jQuery(document).ready(function($){
-                    $('#registration-form-mobile').find('input.js-ajax-validate').blur(function(e){
-                        var aParams={ };
-                        if ($(e.target).attr('name')=='password_confirm') {
-                            aParams['password']=$('#user-password').val();
-                        }
-                        if ($(e.target).attr('name')=='password') {
-                            aParams['password']=$('#user-password').val();
-                            if ($('#user-password-confirm').val()) {
-                                ls.user.validateRegistrationField('b',$('#user-password-confirm').val(),$('#registration-form-mobile'),{ 'password': $(e.target).val() });
+            {if $oConfig->GetValue('general.reg.invite')}
+                <form action="{router page='registration'}invite/" method="POST" id="registration-form-mobile">
+                    <input placeholder="{$aLang.registration_invite_code}" type="text" name="invite_code" class="input-text input-width-full" />
+
+                    <input type="submit" name="submit_invite" value="{$aLang.registration_invite_check}" class="button button-primary" />
+                </form>
+            {else}
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('#registration-form-mobile').find('input.js-ajax-validate').blur(function(e){
+                            var aParams={ };
+                            if ($(e.target).attr('name')=='password_confirm') {
+                                aParams['password']=$('#user-password').val();
                             }
-                        }
-                        ls.user.validateRegistrationField($(e.target).attr('name'),$(e.target).val(),$('#registration-form-mobile'),aParams);
+                            if ($(e.target).attr('name')=='password') {
+                                aParams['password']=$('#user-password').val();
+                                if ($('#user-password-confirm').val()) {
+                                    ls.user.validateRegistrationField('b',$('#user-password-confirm').val(),$('#registration-form-mobile'),{ 'password': $(e.target).val() });
+                                }
+                            }
+                            ls.user.validateRegistrationField($(e.target).attr('name'),$(e.target).val(),$('#registration-form-mobile'),aParams);
+                        });
+                        $('#registration-form-mobile').bind('submit',function(){
+                            ls.user.registration('registration-form-mobile');
+                            return false;
+                        });
+                        $('#registration-form-submit').attr('disabled',false);
                     });
-                    $('#registration-form-mobile').bind('submit',function(){
-                        ls.user.registration('registration-form-mobile');
-                        return false;
-                    });
-                    $('#registration-form-submit').attr('disabled',false);
-                });
-            </script>
+                </script>
 
-            <form action="{router page='registration'}" method="post" id="registration-form-mobile">
-                <input placeholder="{$aLang.registration_login}" type="text" name="login" id="registration-login" value="{$_aRequest.login}" class="input-text input-width-full js-ajax-validate" />
-                <i class="icon-ok-green validate-ok-field-login" style="display: none"></i>
-                <small class="validate-error-hide validate-error-field-login"></small>
+                <form action="{router page='registration'}" method="post" id="registration-form-mobile">
+                    <input placeholder="{$aLang.registration_login}" type="text" name="login" id="registration-login" value="{$_aRequest.login}" class="input-text input-width-full js-ajax-validate" />
+                    <i class="icon-ok-green validate-ok-field-login" style="display: none"></i>
+                    <small class="validate-error-hide validate-error-field-login"></small>
 
-                <input placeholder="{$aLang.registration_mail}" type="text" name="mail" id="registration-mail" value="{$_aRequest.mail}" class="input-text input-width-full js-ajax-validate" />
-                <i class="icon-ok-green validate-ok-field-mail" style="display: none"></i>
-                <small class="validate-error-hide validate-error-field-mail"></small>
+                    <input placeholder="{$aLang.registration_mail}" type="text" name="mail" id="registration-mail" value="{$_aRequest.mail}" class="input-text input-width-full js-ajax-validate" />
+                    <i class="icon-ok-green validate-ok-field-mail" style="display: none"></i>
+                    <small class="validate-error-hide validate-error-field-mail"></small>
 
-                <input placeholder="{$aLang.registration_password}" type="password" name="password" id="user-password" value="" class="input-text input-width-full js-ajax-validate" />
-                <i class="icon-ok-green validate-ok-field-password" style="display: none"></i>
-                <small class="validate-error-hide validate-error-field-password"></small>
+                    <input placeholder="{$aLang.registration_password}" type="password" name="password" id="user-password" value="" class="input-text input-width-full js-ajax-validate" />
+                    <i class="icon-ok-green validate-ok-field-password" style="display: none"></i>
+                    <small class="validate-error-hide validate-error-field-password"></small>
 
-                <input placeholder="{$aLang.registration_password_retry}" type="password" value="" id="user-password-confirm" name="password_confirm" class="input-text input-width-full js-ajax-validate" />
-                <i class="icon-ok-green validate-ok-field-password_confirm" style="display: none"></i>
-                <small class="validate-error-hide validate-error-field-password_confirm"></small>
+                    <input placeholder="{$aLang.registration_password_retry}" type="password" value="" id="user-password-confirm" name="password_confirm" class="input-text input-width-full js-ajax-validate" />
+                    <i class="icon-ok-green validate-ok-field-password_confirm" style="display: none"></i>
+                    <small class="validate-error-hide validate-error-field-password_confirm"></small>
 
-                {if $sAction!='registration'}
-                    {hookb run="registration_captcha"}
-                        <img src="{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}"
-                             onclick="this.src='{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}&n='+Math.random();"
-                             class="captcha-image" />
-                        <input type="text" name="captcha" id="captcha" value="" maxlength="3" class="input-text input-width-100 js-ajax-validate" />
-                        <small class="validate-error-hide validate-error-field-captcha"></small>
-                    {/hookb}
-                {/if}
+                    {if $sAction!='registration'}
+                        {hookb run="registration_captcha"}
+                            <img src="{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}"
+                                 onclick="this.src='{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}&n='+Math.random();"
+                                 class="captcha-image" />
+                            <input type="text" name="captcha" id="captcha" value="" maxlength="3" class="input-text input-width-100 js-ajax-validate" />
+                            <small class="validate-error-hide validate-error-field-captcha"></small>
+                        {/hookb}
+                    {/if}
 
-                <div class="clearfix"></div>
-                <button type="submit" name="submit_register" class="button button-primary" id="registration-form-submit" disabled="disabled">{$aLang.registration_submit}</button>
-            </form>
+                    <div class="clearfix"></div>
+                    <button type="submit" name="submit_register" class="button button-primary" id="registration-form-submit" disabled="disabled">{$aLang.registration_submit}</button>
+                </form>
+            {/if}
         {/if}
 
         {if $sAction!='login'}
