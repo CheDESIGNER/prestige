@@ -1,4 +1,3 @@
-Prestige is a theme for LiveStreet CMS
 
 Prestige is a perfect solution for comminity, news, blog websites.
 Works perfect on desktop and mobile.
