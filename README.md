@@ -1,3 +1,9 @@
+Prestige is a theme for LiveStreet CMS
+
+Prestige is a perfect solution for comminity, news, blog websites.
+Works perfect on desktop and mobile.
+
+
 Prestige - адаптивный шаблон для LiveStreet и Alto
 
 В этом приватном репозитории 2 версии шаблон, для LiveStreet и Alto.
@@ -14,4 +20,3 @@ Prestige - адаптивный шаблон для LiveStreet и Alto
 Так же будет развиваться Wiki шаблона, в которой будут собраны все полезные информации, а так же инструкции.<br/>
 Вот тут (https://github.com/Chedesigner/prestige/wiki)
 
-**аыуаыуа**
